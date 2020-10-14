@@ -1,0 +1,16 @@
+<h1>Out MongoDB is working!</h1>
+
+<ul>
+  <li *ngFor="let user of users">{{ user.name }}</li>
+</ul>
+
+ <form #f="ngForm" (ngSubmit)="post(f)">
+        <input name="name" type="text" [(ngModel)]='name' required>
+        <input name="email" type="email" [(ngModel)]='email' required>
+        <input name="file" type="file" [(ngModel)]='file'>
+        <input type="text" name="id" type="hidden" [(ngModel)]='id'>
+        <input type="submit" value="Submit">
+
+
+
+    </form>
